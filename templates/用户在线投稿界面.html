@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>用户在线投稿界面</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="{% static 'css/css/axure_rp_page.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/data/styles.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/files/用户在线投稿界面/styles.css' %}" type="text/css" rel="stylesheet"/>
+    <script src="{% static 'js/scripts/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/axQuery.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/globals.js' %}"></script>
+    <script src="{% static 'js/scripts/axutils.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/annotation.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/axQuery.std.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/doc.js' %}"></script>
+    <script src="{% static 'js/scripts/messagecenter.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/events.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/recording.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/action.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/expr.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/geometry.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/flyout.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/model.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/repeater.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/sto.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/utils.temp.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/variables.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/drag.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/move.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/visibility.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/style.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/adaptive.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/tree.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/init.temp.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/legacy.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/viewer.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/math.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'js/data/document.js' %}"></script>
+    <script src="{% static 'js/files/用户在线投稿界面/data.js' %}"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+    <script type="text/javascript">
+   function check(form){
+       if(form.ititle.value==''){
+           alert("请输入文章标题！");
+           form.ititle.focus();
+           return false;
+       }
+       if(form.ifield.value==''){
+           alert("请选择学科领域！");
+           form.ifield.focus();
+           return false;
+       }
+       form.submit();
+   }
+</script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u164" class="ax_default box_2">
+        <div id="u164_div" class=""></div>
+        <div id="u164_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u165" class="ax_default box_2">
+        <div id="u165_div" class=""></div>
+        <div id="u165_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u166" class="ax_default _文本段落">
+        <div id="u166_div" class=""></div>
+        <div id="u166_text" class="text ">
+          <p><span style="text-decoration:none;">**杂志社</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u167" class="ax_default _文本段落">
+        <div id="u167_div" class=""></div>
+        <div id="u167_text" class="text ">
+          <p><span style="text-decoration:none;">用户稿件管理界面欢迎您！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u168" class="ax_default button">
+        <div id="u168_div" class=""></div>
+        <div id="u168_text" class="text ">
+          <a href="{% url 'author:logout' %}">退出</a>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u169" class="ax_default _文本段落">
+        <div id="u169_div" class=""></div>
+        <div id="u169_text" class="text ">
+          <a href="{% url 'author:author_contribute' %}">已投稿件</a>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u170" class="ax_default line">
+        <img id="u170_img" class="img " src="{% static 'img/用户已投稿件界面/u125.svg' %}"/>
+        <div id="u170_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u171" class="ax_default _文本段落">
+        <div id="u171_div" class=""></div>
+        <div id="u171_text" class="text ">
+          <p><span style="text-decoration:none;">在线投稿</span></p>
+        </div>
+      </div>
+
+      <form id="form4"action={% url 'author:savefile' %} enctype="multipart/form-data" method ='post' name='form4'>
+      <!-- Unnamed (文本框) -->
+      <div id="u172" class="ax_default text_field">
+        <div id="u172_div" class=""></div>
+        <input id="u172_input" type="text" value="" class="u172_input" name="ititle"/>
+      </div>
+
+
+      <!-- Unnamed (矩形) -->
+      <div id="u173" class="ax_default label">
+        <div id="u173_div" class=""></div>
+        <div id="u173_text" class="text ">
+          <p><span style="text-decoration:none;">文章标题：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (下拉列表) -->
+      <div id="u174" class="ax_default droplist">
+        <div id="u174_div" class=""></div>
+        <select id="u174_input" class="u174_input" name="ifield">
+          <option class="u174_input_option" value="请务必选择一个领域">请务必选择一个领域</option>
+          <option class="u174_input_option" value="宏观经济">宏观经济</option>
+          <option class="u174_input_option" value="微观经济">微观经济</option>
+          <option class="u174_input_option" value="金融市场">金融市场</option>
+          <option class="u174_input_option" value="运筹科学">运筹科学</option>
+          <option class="u174_input_option" value="信息管理">信息管理</option>
+          <option class="u174_input_option" value="金融科技">金融科技</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u175" class="ax_default label">
+        <div id="u175_div" class=""></div>
+        <div id="u175_text" class="text ">
+          <p><span style="text-decoration:none;">学科领域：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u176" class="ax_default label">
+        <div id="u176_div" class=""></div>
+        <div id="u176_text" class="text ">
+          <p><span style="text-decoration:none;">选择文件：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u177" class="ax_default _形状">
+        <div id="u177_div" class=""></div>
+        <input id="u177_input" type="file" value="" class="u177_input" name="file"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u178" class="ax_default primary_button">
+        <div id="u178_div" class=""></div>
+        <div id="u178_text" class="text ">
+          <p><span style="text-decoration:none;" onclick="check(form4)">投稿</span> </p>
+        </div>
+      </div>
+      </form>
+    </div>
+    <script src="{% static 'js/scripts/axure/ios.js' %}"></script>
+  </body>
+</html>

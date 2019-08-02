@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>主编人事信息更改界面</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="{% static 'css/css/axure_rp_page.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/data/styles.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/files/主编人事信息更改界面/styles.css' %}" type="text/css" rel="stylesheet"/>
+    <script src="{% static 'js/scripts/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/axQuery.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/globals.js' %}"></script>
+    <script src="{% static 'js/scripts/axutils.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/annotation.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/axQuery.std.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/doc.js' %}"></script>
+    <script src="{% static 'js/scripts/messagecenter.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/events.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/recording.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/action.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/expr.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/geometry.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/flyout.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/model.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/repeater.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/sto.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/utils.temp.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/variables.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/drag.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/move.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/visibility.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/style.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/adaptive.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/tree.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/init.temp.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/legacy.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/viewer.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/math.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'js/data/document.js' %}"></script>
+    <script src="{% static 'js/files/主编人事信息更改界面/data.js' %}"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+
+    <script type="text/javascript">
+       function modify(form){
+           if(form.email.value==''){
+               alert("请输入用户邮箱！");
+               form.email.focus();
+               return false;
+           }
+           if(form.tel.value==''){
+               alert("请输入用户电话！");
+               form.tel.focus();
+               return false;
+           }
+           if(form.pwd.value==''){
+               alert("请输入登录密码！");
+               form.pwd.focus();
+               return false;
+           }
+           if(form.pos.value==''){
+               alert("请输入用户职能！");
+               form.pos.focus();
+               return false;
+           }
+           if({{pos}}=='expert' and form.field.value==''):{
+               alert("请输入专家领域！");
+               form.field.focus();
+               return false;
+           }
+
+           form.submit();
+       }
+    </script>
+
+  </head>
+  <body>
+    <div id="base" class="">
+      <form action="{% url 'chief:modify' %}" method="post" name="form2">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100444" class="ax_default box_3">
+        <div id="u100444_div" class=""></div>
+        <div id="u100444_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100445" class="ax_default box_2">
+        <div id="u100445_div" class=""></div>
+        <div id="u100445_text" class="text ">
+          <p><span style="text-decoration:none;">人事信息更改界面</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100446" class="ax_default _文本段落">
+        <div id="u100446_div" class=""></div>
+        <div id="u100446_text" class="text ">
+          <p><span style="text-decoration:none;">亲爱的主编，</span></p><p><span style="text-decoration:none;"><br></span></p><p><span style="text-decoration:none;">杂志社稿件管理</span></p><p><span style="text-decoration:none;">后台欢迎您</span></p><p><span style="text-decoration:none;"><br></span></p><p><span style="text-decoration:none;"><br></span></p><p><span style="text-decoration:none;">您正在进行的是</span></p><p><span style="text-decoration:none;">人事信息更改工作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100447" class="ax_default button">
+        <div id="u100447_div" class=""></div>
+        <div id="u100447_text" class="text ">
+          <p><a style="text-decoration:none;" href='{% url "chief:u_logout" %}'>退出</a></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u100448" class="ax_default text_field">
+        <div id="u100448_div" class=""></div>
+        <input id="u100448_input" type="text"  readonly="readonly" value={{userid}} class="u100448_input" name="userid"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100449" class="ax_default label">
+        <div id="u100449_div" class=""></div>
+        <div id="u100449_text" class="text ">
+          <p><span style="text-decoration:none;">工作id：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u100450" class="ax_default text_field">
+        <div id="u100450_div" class=""></div>
+        <input id="u100450_input" type="text" readonly="readonly" value={{username}} class="u100450_input" name="username"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100451" class="ax_default label">
+        <div id="u100451_div" class=""></div>
+        <div id="u100451_text" class="text ">
+          <p><span style="text-decoration:none;">姓名：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u100452" class="ax_default text_field">
+        <div id="u100452_div" class=""></div>
+        <input id="u100452_input" type="text" value="{{email}}" class="u100452_input" name = "email"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100453" class="ax_default label">
+        <div id="u100453_div" class=""></div>
+        <div id="u100453_text" class="text ">
+          <p><span style="text-decoration:none;">邮箱：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u100454" class="ax_default text_field">
+        <div id="u100454_div" class=""></div>
+        <input id="u100454_input" type="text" value="{{tel}}" class="u100454_input" name = "tel"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100455" class="ax_default label">
+        <div id="u100455_div" class=""></div>
+        <div id="u100455_text" class="text ">
+          <p><span style="text-decoration:none;">手机：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100456" class="ax_default primary_button">
+        <div id="u100456_div" class=""></div>
+        <div id="u100456_text" class="text ">
+          <a >
+          <p><a style="text-decoration:none;" onclick="modify(form2)" > 更新</a></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100457" class="ax_default primary_button">
+        <div id="u100457_div" class=""></div>
+        <div id="u100457_text" class="text ">
+          <p><a style="text-decoration:none;" href='{% url "chief:delete_faculty" %}'>删除</a></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100458" class="ax_default primary_button">
+        <div id="u100458_div" class=""></div>
+        <div id="u100458_text" class="text ">
+          <p><a style="text-decoration:none;" href="{% url 'chief:manage' %}">返回</a></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u100459" class="ax_default text_field">
+        <div id="u100459_div" class=""></div>
+        <input id="u100459_input" type="text" value="{{pwd}}" class="u100459_input" name = "pwd"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100460" class="ax_default label">
+        <div id="u100460_div" class=""></div>
+        <div id="u100460_text" class="text ">
+          <p><span style="text-decoration:none;">密码：</span></p>
+        </div>
+      </div>
+
+      <div id="u100461" class="ax_default text_field">
+        <div id="u100461_div" class=""></div>
+        <input id="u100461_input" type="text" value="{{identity}}" class="u100461_input" name = "pwd"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u100462" class="ax_default label">
+        <div id="u100462_div" class=""></div>
+        <div id="u100462_text" class="text ">
+          <p><span style="text-decoration:none;">职能：</span></p>
+        </div>
+      </div>
+
+      <div id="u100463" class="ax_default droplist">
+        <div id="u100463_div" class=""></div>
+        <select id="u100463_input" class="u100463_input" name="field" value="">
+          <option class="u100463_input_option" value={{field}}>{{field}}</option>
+          <option class="u100463_input_option" value="宏观经济">宏观经济</option>
+          <option class="u100463_input_option" value="微观经济">微观经济</option>
+          <option class="u100463_input_option" value="金融市场">金融市场</option>
+          <option class="u100463_input_option" value="运筹科学">运筹科学</option>
+          <option class="u100463_input_option" value="信息管理">信息管理</option>
+          <option class="u100463_input_option" value="金融科技">金融科技</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u11464" class="ax_default label">
+        <div id="u11464_div" class=""></div>
+        <div id="u11464_text" class="text ">
+          <p><span style="text-decoration:none;">领域：</span></p>
+        </div>
+      </div>
+
+      <div id="u101981" class="ax_default droplist">
+        <div id="u101981_div" class=""></div>
+        <select id="u101981_input" class="u101981_input" name="isfield" value="">
+          <option class="u101981_input_option" value={{isfield}}>{{isfield}}</option>
+          <option class="u101981_input_option" value=1>是</option>
+          <option class="u101981_input_option" value=0>否</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u101982" class="ax_default label">
+        <div id="u101982_div" class=""></div>
+        <div id="u101982_text" class="text ">
+          <p><span style="text-decoration:none;">是否领域审核：</span></p>
+        </div>
+      </div>
+
+      <div id="u101983" class="ax_default droplist">
+        <div id="u101983_div" class=""></div>
+        <select id="u101983_input" class="u101983_input" name="islevel" value="">
+          <option class="u101983_input_option" value={{islevel}}>{{islevel}}</option>
+          <option class="u101983_input_option" value=1>是</option>
+          <option class="u101983_input_option" value=0>否</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u101984" class="ax_default label">
+        <div id="u101984_div" class=""></div>
+        <div id="u101984_text" class="text ">
+          <p><span style="text-decoration:none;">是否水平审核：</span></p>
+        </div>
+      </div>
+
+
+      {% if messages %}
+        <script>
+          {% for msg in messages %}
+            alert('{{ msg.message }}');
+          {% endfor %}
+        </script>
+      {% endif %}
+
+
+    </div>
+    <script src="{% static 'js/scripts/axure/ios.js' %}"></script>
+  </body>
+</html>

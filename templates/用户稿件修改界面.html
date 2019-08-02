@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>用户稿件修改界面</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="{% static 'css/css/axure_rp_page.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/data/styles.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'css/files/用户稿件修改界面/styles.css' %}" type="text/css" rel="stylesheet"/>
+    <script src="{% static 'js/scripts/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/axQuery.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/globals.js' %}"></script>
+    <script src="{% static 'js/scripts/axutils.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/annotation.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/axQuery.std.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/doc.js' %}"></script>
+    <script src="{% static 'js/scripts/messagecenter.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/events.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/recording.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/action.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/expr.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/geometry.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/flyout.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/model.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/repeater.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/sto.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/utils.temp.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/variables.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/drag.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/move.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/visibility.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/style.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/adaptive.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/tree.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/init.temp.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/legacy.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/viewer.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/math.js' %}"></script>
+    <script src="{% static 'js/scripts/axure/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'js/data/document.js' %}"></script>
+    <script src="{% static 'js/files/用户稿件修改界面/data.js' %}"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+      <script type="text/javascript">
+   function check(form){
+       if(form.ititle.value==''){
+           alert("请输入文章标题！");
+           form.ititle.focus();
+           return false;
+       }
+       if(form.ifield.value==''){
+           alert("请选择学科领域！");
+           form.ifield.focus();
+           return false;
+       }
+       form.submit();
+   }
+</script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u195" class="ax_default box_2">
+        <div id="u195_div" class=""></div>
+        <div id="u195_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u196" class="ax_default box_2">
+        <div id="u196_div" class=""></div>
+        <div id="u196_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u197" class="ax_default _文本段落">
+        <div id="u197_div" class=""></div>
+        <div id="u197_text" class="text ">
+          <p><span style="text-decoration:none;">**杂志社</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u198" class="ax_default _文本段落">
+        <div id="u198_div" class=""></div>
+        <div id="u198_text" class="text ">
+          <p><span style="text-decoration:none;">用户稿件管理界面欢迎您！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u199" class="ax_default button">
+        <div id="u199_div" class=""></div>
+        <div id="u199_text" class="text ">
+          <a href="{% url 'author:logout' %}">退出</a>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u200" class="ax_default _文本段落">
+        <div id="u200_div" class=""></div>
+        <div id="u200_text" class="text ">
+          <p><span style="text-decoration:none;">已投稿件</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u201" class="ax_default line">
+        <img id="u201_img" class="img " src="{% static 'img/用户已投稿件界面/u125.svg' %}"/>
+        <div id="u201_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u202" class="ax_default _文本段落">
+        <div id="u202_div" class=""></div>
+        <div id="u202_text" class="text ">
+          <a href="{% url 'author:contribute' %}">在线投稿</a>
+        </div>
+
+      </div>
+
+      <form id="form5"action={% url 'author:reupload' %}?artid={{ data1.2 }} enctype="multipart/form-data" method ='post' name='form5'>
+      <!-- Unnamed (文本框) -->
+      <div id="u203" class="ax_default text_field">
+        <div id="u203_div" class=""></div>
+        <input id="u203_input" type="text" value="" class="u203_input" name="ititle"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u204" class="ax_default label">
+        <div id="u204_div" class=""></div>
+        <div id="u204_text" class="text ">
+          <p><span style="text-decoration:none;">文章标题：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (下拉列表) -->
+      <div id="u205" class="ax_default droplist">
+        <div id="u205_div" class=""></div>
+        <select id="u205_input" class="u205_input" name="ifield">
+          <option class="u205_input_option" value="请务必选择一个领域">请务必选择一个领域</option>
+          <option class="u205_input_option" value="宏观经济">宏观经济</option>
+          <option class="u205_input_option" value="微观经济">微观经济</option>
+          <option class="u205_input_option" value="金融市场">金融市场</option>
+          <option class="u205_input_option" value="运筹科学">运筹科学</option>
+          <option class="u205_input_option" value="信息管理">信息管理</option>
+          <option class="u205_input_option" value="金融科技">金融科技</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u206" class="ax_default label">
+        <div id="u206_div" class=""></div>
+        <div id="u206_text" class="text ">
+          <p><span style="text-decoration:none;">学科领域：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u207" class="ax_default label">
+        <div id="u207_div" class=""></div>
+        <div id="u207_text" class="text ">
+          <p><span style="text-decoration:none;">选择文件：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u208" class="ax_default _形状">
+        <div id="u208_div" class=""></div>
+        <input id="u208_input" type="file" value="" class="u208_input" name="file"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u209" class="ax_default primary_button">
+        <div id="u209_div" class=""></div>
+        <div id="u209_text" class="text ">
+          <p><span style="text-decoration:none;" onclick="check(form5)">提交修改</span></p>
+        </div>
+      </div>
+      </form>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u210" class="ax_default _文本段落">
+        <div id="u210_div" class=""></div>
+        <div id="u210_text" class="text ">
+          <p><span style="text-decoration:none;">稿件修改</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u211" class="ax_default line">
+        <img id="u211_img" class="img " src="{% static 'img/用户稿件修改界面/u211.svg' %}"/>
+        <div id="u211_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u212" class="ax_default primary_button">
+        <div id="u212_div" class=""></div>
+        <div id="u212_text" class="text ">
+          <a href="{% url 'author:author_contribute' %}">返回</a>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u213" class="ax_default _文本段落">
+        <div id="u213_div" class=""></div>
+        <div id="u213_text" class="text ">
+          <p><span style="text-decoration:none;">修改意见</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u214" class="ax_default line">
+        <img id="u214_img" class="img " src="{% static 'img/用户稿件修改界面/u211.svg' %}"/>
+        <div id="u214_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本域) -->
+      <div id="u215" >
+        <textarea  style="border:0;border-radius:5px;background-color:rgba(241,241,241,.98);width: 350px;height: 100px;padding: 10px;resize: none;overflow-y:scroll" id="u215_input"  readonly>
+    编辑：{{ data1.0 }}       修改意见：{{ data1.1 }}
+        </textarea>
+
+      </div>
+    </div>
+    <script src="{% static 'js/scripts/axure/ios.js' %}"></script>
+  </body>
+</html>
